@@ -1,0 +1,48 @@
+#!/bin/bash
+
+# - Desabilita ipv6
+# telegram: @asas_dev
+
+echo -e "\033[1;37mDESABILITANDO O IPV6...\033[0m"
+sleep 3
+sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -p
+echo 'net.ipv6.conf.all.disable_ipv6 = 1' > /etc/sysctl.d/70-disable-ipv6.conf
+sysctl -p -f /etc/sysctl.d/70-disable-ipv6.conf
+clear
+echo -e "\033[1;37mDESABILITANDO O IPV6...\033[0m"
+                printf "■■■■■■■■■(03%%)\r"
+                sleep 0.1
+                printf "■■■■■■■■■■(12%%)\r"
+                sleep 0.1
+                printf "■■■■■■■■■■■(24%%)\r"
+                sleep 0.1
+                printf "■■■■■■■■■■■■(31%%)\r"
+                sleep 0.1
+                printf "■■■■■■■■■■■■■(38%%)\r"
+                sleep 0.1
+                printf "■■■■■■■■■■■■■■(45%%)\r"
+                sleep 0.1
+                printf "■■■■■■■■■■■■■■■(63%%)\r"
+                sleep 0.1
+                printf "■■■■■■■■■■■■■■■■(68%%)\r"
+                sleep 0.1
+                printf "■■■■■■■■■■■■■■■■■(73%%)\r"
+                sleep 0.1
+                printf "■■■■■■■■■■■■■■■■■■(81%%)\r"
+                sleep 0.1
+                printf "■■■■■■■■■■■■■■■■■■■(89%%)\r"
+                sleep 0.1
+                printf "■■■■■■■■■■■■■■■■■■■■(94%%)\r"
+                sleep 0.1
+                printf "■■■■■■■■■■■■■■■■■■■■■l(95%%)\r"
+                sleep 0.1
+                printf "■■■■■■■■■■■■■■■■■■■■■■(99%%)\r"
+                sleep 0.1
+                printf "■■■■■■■■■■■■■■■■■■■■■■■(100%%)\r"
+                sleep 2
+clear
+echo -e "\033[1;37mOK \033[1;37m ➤ \033[1;32m IPV6 DESABILITADO COM SUCESSO!\033[0m"
+sleep 3
+clear
+history -c
+criar
