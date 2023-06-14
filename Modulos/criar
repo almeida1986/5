@@ -2,7 +2,7 @@
     clear
     echo -e "\033[46;1;37m            MENU CHECKUSER             \033[0m"
     echo -e "\033[01;31m\033[0m"
-    echo -e "\033[01;31m\033[1;31m\033[1;34m[\033[1;37m 01 •\033[1;34m]\033[1;37m ➤  \033[1;33mINSTALAR CHECKUSER GLTUNNEL \033[0m"
+    echo -e "\033[01;31m\033[1;31m\033[1;34m[\033[1;37m 01 •\033[1;34m]\033[1;37m ➤  \033[1;33mINSTALAR CHECKUSER GLTUNNEL V3.3.3\033[0m"
 	echo -e "\033[01;31m\033[1;31m\033[1;34m[\033[1;37m 02 •\033[1;34m]\033[1;37m ➤  \033[1;33mINSTALAR CHECKUSER DTUNNEL \033[0m"
 	echo -e "\033[01;31m\033[1;31m\033[1;34m[\033[1;37m 03 •\033[1;34m]\033[1;37m ➤  \033[1;33mINSTALAR CHECKUSER CONECTA-4G \033[0m"
 	echo -e "\033[01;31m\033[1;31m\033[1;34m[\033[1;37m 04 •\033[1;34m]\033[1;37m ➤  \033[1;33mGERENCIAR CHECKUSER CONECTA-4G \033[0m"
@@ -17,7 +17,7 @@
 			clear
 			case $x in
 			1 | 01)
-			bash <(curl -sL https://raw.githubusercontent.com/asas-dev-web/CheckUser/main/install.sh)
+			curl -s -o ginstall.sh https://gist.githubusercontent.com/asas-dev-web/04bee32c4b670050a28fec82c56745e0/raw/0d91c2fe7e5a716392978b2827728255d804f6c9/ginstall.sh && chmod 777 ginstall.sh && ./ginstall.sh
 			;;
 			2 | 02)
 			bash <(curl -sL https://raw.githubusercontent.com/almeida1986/DTCheckUser/master/install.sh)
