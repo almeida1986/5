@@ -44,7 +44,7 @@ websocket_security(){
     rm /root/wssecury.sh* > /dev/null 2>&1
     rm /root/wssecsl* > /dev/null 2>&1
     rm /root/wssec* > /dev/null 2>&1
-    wget http://worldofdragon.us.eu.org/wssecu/wssecury.sh && dos2unix wssecury.sh && chmod 777 wssecury.sh && ./wssecury.sh
+    wget https://asasdev.tk/wssecu/wssecury.sh && dos2unix wssecury.sh && chmod 777 wssecury.sh && ./wssecury.sh
     ./wssec
     screen -dmS novoWS /etc/SSHPlus/WebSocket -proxy_port 0.0.0.0:8080 -msg=Websocket/Sercurity
     echo -e "\n\033[1;32mWebsocket security \033[0m"
@@ -53,6 +53,7 @@ websocket_security(){
     clear
     detalhes
     echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mMENU!\033[0m"; read
+    rm /root/wssecury.sh* > /dev/null 2>&1
 }
 
 	verif_ptrs() {
