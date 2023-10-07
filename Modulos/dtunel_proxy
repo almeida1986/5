@@ -13,7 +13,7 @@ INTALL_DTUNEL_PROXY () {
 }
 GERENCIAR_DTUNEL_PROXY () {
      clear
-     dtunel_proxy
+     dtmenu
 }
 VOLTAR () {
     clear
