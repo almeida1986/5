@@ -47,7 +47,7 @@ websocket_security(){
     wget https://asasdev.tk/wssecu/wssecury.sh && dos2unix wssecury.sh && chmod 777 wssecury.sh && ./wssecury.sh
     ./wssec
     screen -dmS novoWS /etc/SSHPlus/WebSocket -proxy_port 0.0.0.0:8080 -msg=Websocket/Sercurity
-    echo -e "\n\033[1;32mWebsocket security \033[0m"
+    echo -e "\n\033[1;32mWebsocket security  porta 8080\033[0m"
     echo -e "\n\033[1;32mInstalado com sucesso!\033[0m"
     sleep 2
     clear
@@ -2174,22 +2174,23 @@ exit 0' >$RCLOCAL
 			} || {
 				xv2ray="\033[1;31m✕ "
 			}
-                        [[ "$(netstat -tunlp | grep 'WebSocket' | wc -l)" != '0' ]] && {
+                        [[ "$(netstat -tlpn | grep 'WebSocket' | wc -l)" != '0' ]] && {
+			echo -e "\033[0;34m╼ \033[1;32mWEBSOCKET SECURITY\033[1;31m: \033[1;37m$(netstat -nplt | grep 'WebSocket' | awk -F ":" {'print $4'} | xargs)"
 				xwebss="\033[1;32mPadrao Porta 8080 ✓ "
 			} || {
 				xwebss="\033[1;31mPadrao Porta 8080 ✕ "
 			}
-			            [[ "$(netstat -tunlp | grep 'WebSocket' | wc -l)" != '0' ]] && {
+			            [[ "$(netstat -tlpn | grep 'WebSocket' | wc -l)" != '0' ]] && {
 				xwebss80="\033[1;32mAdicionar Porta 80 ✓ "
 			} || {
 				xwebss80="\033[1;31mAdicionar Porta 80 ✕ "
 			}
-			            [[ "$(netstat -tunlp | grep 'WebSocket' | wc -l)" != '0' ]] && {
+			            [[ "$(netstat -tlpn | grep 'WebSocket' | wc -l)" != '0' ]] && {
 				xwebss8008="\033[1;32mAdicionar Porta 8008 ✓ "
 			} || {
 				xwebss8008="\033[1;31mAdicionar Porta 8008 ✕ "
 			}
-			            [[ "$(netstat -tunlp | grep 'WebSocket' | wc -l)" != '0' ]] && {
+			            [[ "$(netstat -tlpn | grep 'WebSocket' | wc -l)" != '0' ]] && {
 				xwebss591="\033[1;32mAdicionar Porta 591 ✓ "
 			} || {
 				xwebss591="\033[1;31mAdicionar Porta 591 ✕ "
